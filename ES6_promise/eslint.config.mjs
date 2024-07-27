@@ -1,11 +1,16 @@
+import js from '@eslint/js';
+import { Linter } from 'eslint';
+
 export default [
   {
-    ignores: ["**/node_modules/**"],
-    files: ["**/*.js"],
+    files: ['**/*.js'],
     languageOptions: {
-      globals: {
-        console: "readonly",
-      },
+      ecmaVersion: 2021,
+      sourceType: 'module',
+    },
+    rules: {
+      'no-unused-vars': 'warn',
+      'no-undef': 'error',
     },
   },
 ];
