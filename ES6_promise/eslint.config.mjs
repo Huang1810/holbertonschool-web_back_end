@@ -8,15 +8,12 @@ export default [
       ecmaVersion: 2021,
       sourceType: 'module',
       globals: {
-        setTimeout: 'readonly',
-        require: 'readonly',
-        process: 'readonly',
-        __dirname: 'readonly',
-        module: 'readonly',
+        setTimeout: 'readonly'
       },
     },
     rules: {
-      // Your ESLint rules here
+      'no-unused-vars': 'warn',
+      'no-undef': 'warn',
     },
   },
 ];

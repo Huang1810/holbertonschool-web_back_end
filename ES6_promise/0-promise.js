@@ -1,9 +1,6 @@
 export default function getResponseFromAPI() {
-    return new Promise((resolve) => {
-      // Simulating an asynchronous operation
-      setTimeout(() => {
-        resolve('Success');
-      }, 1000);
+    // eslint-disable-next-line
+    return new Promise((resolve, reject) => {
+      // dosomething
     });
   }
-  
