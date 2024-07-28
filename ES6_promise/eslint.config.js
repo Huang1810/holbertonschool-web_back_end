@@ -12,6 +12,7 @@ module.exports = [
         process: 'readonly',
         __dirname: 'readonly',
         module: 'readonly',
+        console: 'readonly',  // Add console here
       },
     },
     rules: {
